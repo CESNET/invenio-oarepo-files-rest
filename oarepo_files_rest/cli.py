@@ -18,7 +18,7 @@ from invenio_db import db
 
 @click.group()
 def files():
-    """Command for loading fixture data."""
+    """OARepo File management commands."""
 
 
 @files.command('createbucket')

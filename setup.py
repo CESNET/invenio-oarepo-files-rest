@@ -68,7 +68,7 @@ setup(
     platforms='any',
     entry_points={
        'flask.commands': [
-            'oarepo_files = oarepo_files_rest.cli:files',
+            'oarepo-files = oarepo_files_rest.cli:files',
         ],
         'invenio_base.apps': [
             'oarepo_files_rest = oarepo_files_rest:OArepoFilesREST',
