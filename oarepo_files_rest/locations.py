@@ -12,7 +12,6 @@ from os.path import exists
 
 from os import makedirs
 
-from flask import current_app
 from invenio_db import db
 from invenio_files_rest.models import Location
 
@@ -24,8 +23,8 @@ def init_locations():
     """ Create invenio-files-rest Bucket Locations."""
     try:
         locations = [
-            ('default', True, current_oarepo_files.default_location_uri()),
-            ('archive', False, current_oarepo_files.archive_location_uri())
+            ('default', True, current_oarepo_files.default_location_uri),
+            ('archive', False, current_oarepo_files.archive_location_uri)
         ]
         created = []
         session = db.session

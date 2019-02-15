@@ -105,17 +105,3 @@ def relocate(old_location, new_location):
         click.secho('    ' + r[0], fg='green')
 
     db.session.commit()
-
-
-@files.command('uploadtest')
-@click.argument('source')
-@click.argument('bucket_id')
-@click.argument('key')
-@with_appcontext
-def uploadtesttest(source, bucket_id, key):
-    import os
-    from oarepo_files_rest.proxies import current_oarepo_files
-    with open(source, 'rb') as f:
-        file_id = current_oarepo_files.create_file(bucket_id, key, f, os.path.getsize(source))
-        click.secho('Created file: {0}'.format(file_id), fg='green')
-
