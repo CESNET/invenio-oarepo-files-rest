@@ -70,10 +70,10 @@ setup(
             'oarepo-files = invenio_oarepo_files_rest.cli:files',
         ],
         'invenio_base.apps': [
-            'invenio_oarepo_files_rest = invenio_oarepo_files_rest:OArepoFilesREST',
+            'invenio_oarepo_files_rest = invenio_oarepo_files_rest:InvenioOArepoFilesREST',
         ],
         'invenio_base.api_apps': [
-            'invenio_oarepo_files_rest = invenio_oarepo_files_rest:OArepoFilesREST',
+            'invenio_oarepo_files_rest = invenio_oarepo_files_rest:InvenioOArepoFilesREST',
         ],
     },
     install_requires=install_requires,
