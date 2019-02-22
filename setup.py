@@ -36,11 +36,10 @@ setup_requires = [
 
 install_requires = [
     'Flask-BabelEx>=0.9.3',
-    'invenio-records-rest>=1.1.0,<1.2.0',
-    'invenio-records-files>=1.0.0a11',
     'invenio[{db},{es},base]~={version}'.format(
         db=DATABASE, es=ELASTICSEARCH, version=INVENIO_VERSION),
     'arrow>=0.12.1',
+    'invenio-files-rest==1.0.0a23',
 ]
 
 packages = find_packages()
@@ -48,33 +47,33 @@ packages = find_packages()
 
 # Get the version string. Cannot be done with import!
 g = {}
-with open(os.path.join('oarepo_files_rest', 'version.py'), 'rt') as fp:
+with open(os.path.join('invenio_oarepo_files_rest', 'version.py'), 'rt') as fp:
     exec(fp.read(), g)
     version = g['__version__']
 
 setup(
-    name='oarepo-files-rest',
+    name='invenio-oarepo-files-rest',
     version=version,
     description=__doc__,
     long_description=readme,
-    keywords='oarepo-files-rest Invenio',
+    keywords='invenio-oarepo-files-rest Invenio',
     license='MIT',
     author='Miroslav Bauer',
     author_email='bauer@cesnet.cz',
-    url='https://github.com/CESNET/oarepo-files-rest',
+    url='https://github.com/CESNET/invenio-oarepo-files-rest',
     packages=packages,
     zip_safe=False,
     include_package_data=True,
     platforms='any',
     entry_points={
        'flask.commands': [
-            'oarepo-files = oarepo_files_rest.cli:files',
+            'oarepo-files = invenio_oarepo_files_rest.cli:files',
         ],
         'invenio_base.apps': [
-            'oarepo_files_rest = oarepo_files_rest:OArepoFilesREST',
+            'invenio_oarepo_files_rest = invenio_oarepo_files_rest:OArepoFilesREST',
         ],
         'invenio_base.api_apps': [
-            'oarepo_files_rest = oarepo_files_rest:OArepoFilesREST',
+            'invenio_oarepo_files_rest = invenio_oarepo_files_rest:OArepoFilesREST',
         ],
     },
     install_requires=install_requires,

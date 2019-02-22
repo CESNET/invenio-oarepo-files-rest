@@ -16,7 +16,7 @@ from os.path import join
 from invenio_files_rest.models import Location
 from werkzeug.utils import cached_property
 
-from oarepo_files_rest.buckets import create_bucket, get_bucket
+from invenio_oarepo_files_rest.buckets import create_bucket, get_bucket
 from . import config
 
 
@@ -31,14 +31,14 @@ class _OarepoFilesState(object):
     def default_location_uri(self):
         """ Default files location URI"""
         return self.app.config.get(
-            'OAREPO_FILES_DEFAULT_LOCATION', join(sys.prefix, 'var/instance/data')
+            'INVENIO_OAREPO_FILES_DEFAULT_LOCATION', join(sys.prefix, 'var/instance/data')
         )
 
     @cached_property
     def archive_location_uri(self):
         """ Archive files Location URI """
         return self.app.config.get(
-            'OAREPO_FILES_ARCHIVE_LOCATION', join(sys.prefix, 'var/instance/archive')
+            'INVENIO_OAREPO_FILES_ARCHIVE_LOCATION', join(sys.prefix, 'var/instance/archive')
         )
 
     @cached_property
@@ -61,7 +61,7 @@ class _OarepoFilesState(object):
         return get_bucket(bucket_id)
 
 
-class OArepoFilesREST(object):
+class InvenioOArepoFilesREST(object):
     """OArepo Files REST extension."""
 
     def __init__(self, app=None):
@@ -72,7 +72,7 @@ class OArepoFilesREST(object):
     def init_app(self, app):
         """Flask application initialization."""
         self.init_config(app)
-        app.extensions['oarepo-files-rest'] = _OarepoFilesState(app)
+        app.extensions['invenio-oarepo-files-rest'] = _OarepoFilesState(app)
 
     def init_config(self, app):
         """Initialize configuration.
@@ -80,5 +80,5 @@ class OArepoFilesREST(object):
         Override configuration variables with the values in this package.
         """
         for k in dir(config):
-            if k.startswith('OAREPO_FILES_'):
+            if k.startswith('INVENIO_OAREPO_FILES_'):
                 app.config.setdefault(k, getattr(config, k))

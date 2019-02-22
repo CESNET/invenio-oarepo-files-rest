@@ -15,7 +15,7 @@ from os import makedirs
 from invenio_db import db
 from invenio_files_rest.models import Location
 
-from oarepo_files_rest import current_oarepo_files
+from invenio_oarepo_files_rest import current_oarepo_files
 
 
 @with_appcontext

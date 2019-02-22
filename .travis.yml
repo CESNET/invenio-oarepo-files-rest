@@ -69,5 +69,5 @@ deploy:
   on:
     tags: true
     python: "3.6"
-    repo: CESNET/oarepo-files-rest
+    repo: CESNET/invenio-oarepo-files-rest
     condition: $DEPLOY = true

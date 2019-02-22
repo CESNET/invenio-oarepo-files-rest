@@ -5,12 +5,13 @@
 # OArepo Files REST is free software; you can redistribute it and/or modify it
 # under the terms of the MIT License; see LICENSE file for more details.
 
-"""Version information for OArepo Files REST.
 
-This file is imported by ``oarepo_files_rest.__init__``,
-and parsed by ``setup.py``.
-"""
+"""REST API for uploading/downloading files for OArepo."""
 
 from __future__ import absolute_import, print_function
 
-__version__ = '1.0.0'
+from .ext import InvenioOArepoFilesREST
+from .version import __version__
+from .proxies import current_oarepo_files
+
+__all__ = ('__version__', 'InvenioOArepoFilesREST', 'current_oarepo_files')

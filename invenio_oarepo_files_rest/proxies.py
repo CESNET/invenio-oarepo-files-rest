@@ -12,10 +12,10 @@ from __future__ import absolute_import, print_function
 from flask import current_app
 from werkzeug.local import LocalProxy
 
-from oarepo_files_rest.ext import _OarepoFilesState
+from invenio_oarepo_files_rest.ext import _OarepoFilesState
 
 current_oarepo_files: _OarepoFilesState = LocalProxy(
-    lambda: current_app.extensions['oarepo-files-rest'])
+    lambda: current_app.extensions['invenio-oarepo-files-rest'])
 """Helper proxy to access oarepo files state object."""
 
 __all__ = ('current_oarepo_files',)

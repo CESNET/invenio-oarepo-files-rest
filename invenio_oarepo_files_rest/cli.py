@@ -11,8 +11,8 @@ import os
 import click
 from flask.cli import with_appcontext
 
-from oarepo_files_rest.proxies import current_oarepo_files
-from oarepo_files_rest.locations import init_locations
+from invenio_oarepo_files_rest.proxies import current_oarepo_files
+from invenio_oarepo_files_rest.locations import init_locations
 from invenio_db import db
 
 

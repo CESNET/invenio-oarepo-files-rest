@@ -16,7 +16,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/CESNET/oarepo-files-rest/issues.
+Report bugs at https://github.com/CESNET/invenio-oarepo-files-rest/issues.
 
 If you are reporting a bug, please include:
 
@@ -47,7 +47,7 @@ Submit Feedback
 ~~~~~~~~~~~~~~~
 
 The best way to send feedback is to file an issue at
-https://github.com/CESNET/oarepo-files-rest/issues.
+https://github.com/CESNET/invenio-oarepo-files-rest/issues.
 
 If you are proposing a feature:
 
@@ -59,14 +59,14 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `oarepo-files-rest` for local development.
+Ready to contribute? Here's how to set up `invenio-oarepo-files-rest` for local development.
 
-1. Fork the `CESNET/oarepo-files-rest` repo on GitHub.
+1. Fork the `CESNET/invenio-oarepo-files-rest` repo on GitHub.
 2. Clone your fork locally:
 
    .. code-block:: console
 
-      $ git clone git@github.com:your_name_here/oarepo-files-rest.git
+      $ git clone git@github.com:your_name_here/invenio-oarepo-files-rest.git
 
 3. Install your local copy into a virtualenv. Assuming you have
    virtualenvwrapper installed, this is how you set up your fork for local
@@ -74,8 +74,8 @@ Ready to contribute? Here's how to set up `oarepo-files-rest` for local developm
 
    .. code-block:: console
 
-      $ mkvirtualenv oarepo-files-rest
-      $ cd oarepo-files-rest/
+      $ mkvirtualenv invenio-oarepo-files-rest
+      $ cd invenio-oarepo-files-rest/
       $ pip install -e .[all]
 
 4. Create a branch for local development:
@@ -120,5 +120,5 @@ Before you submit a pull request, check that it meets these guidelines:
 2. If the pull request adds functionality, the docs should be updated. Put
    your new functionality into a function with a docstring.
 3. The pull request should work for Python 2.7, 3.3, 3.4 and 3.5. Check
-   https://travis-ci.org/CESNET/oarepo-files-rest/pull_requests
+   https://travis-ci.org/CESNET/invenio-oarepo-files-rest/pull_requests
    and make sure that the tests pass for all supported Python versions.

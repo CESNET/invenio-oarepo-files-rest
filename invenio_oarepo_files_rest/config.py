@@ -10,8 +10,8 @@ import sys
 
 from os.path import join
 
-OAREPO_FILES_DEFAULT_LOCATION = join(sys.prefix, 'var/instance/data')
+INVENIO_OAREPO_FILES_DEFAULT_LOCATION = join(sys.prefix, 'var/instance/data')
 """ Where Invenio should store its file data by default """
 
-OAREPO_FILES_ARCHIVE_LOCATION = join(sys.prefix, 'var/instance/archive')
+INVENIO_OAREPO_FILES_ARCHIVE_LOCATION = join(sys.prefix, 'var/instance/archive')
 """ Where Invenio should store archived file data """

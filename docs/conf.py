@@ -60,7 +60,7 @@ author = u'Miroslav Bauer'
 # Get the version string. Cannot be done with import!
 g = {}
 with open(os.path.join(os.path.dirname(__file__), '..',
-                       'oarepo_files_rest', 'version.py'),
+                       'invenio_oarepo_files_rest', 'version.py'),
           'rt') as fp:
     exec(fp.read(), g)
     version = g['__version__']
@@ -119,13 +119,13 @@ html_theme = 'alabaster'
 html_theme_options = {
     'description': 'REST API for uploading/downloading files for OArepo.',
     'github_user': 'inveniosoftware',
-    'github_repo': 'oarepo-files-rest',
+    'github_repo': 'invenio-oarepo-files-rest',
     'github_button': False,
     'github_banner': True,
     'show_powered_by': False,
     'extra_nav_links': {
-        'oarepo-files-rest@GitHub': 'https://github.com/CESNET/oarepo-files-rest',
-        'oarepo-files-rest@PyPI': 'https://pypi.python.org/pypi/oarepo-files-rest/',
+        'invenio-oarepo-files-rest@GitHub': 'https://github.com/CESNET/invenio-oarepo-files-rest',
+        'invenio-oarepo-files-rest@PyPI': 'https://pypi.python.org/pypi/invenio-oarepo-files-rest/',
     }
 }
 
@@ -252,7 +252,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'oarepo-files-rest.tex', u'oarepo-files-rest Documentation',
+    (master_doc, 'invenio-oarepo-files-rest.tex', u'invenio-oarepo-files-rest Documentation',
      u'Miroslav Bauer', 'manual'),
 ]
 
@@ -282,7 +282,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'oarepo-files-rest', u'oarepo-files-rest Documentation',
+    (master_doc, 'invenio-oarepo-files-rest', u'invenio-oarepo-files-rest Documentation',
      [author], 1)
 ]
 
@@ -296,8 +296,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'oarepo-files-rest', u'OArepo Files REST Documentation',
-     author, 'oarepo-files-rest', 'REST API for uploading/downloading files for OArepo.',
+    (master_doc, 'invenio-oarepo-files-rest', u'OArepo Files REST Documentation',
+     author, 'invenio-oarepo-files-rest', 'REST API for uploading/downloading files for OArepo.',
      'Miscellaneous'),
 ]
 
