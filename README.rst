@@ -8,14 +8,14 @@
  OArepo Files REST
 ===================
 
-.. image:: https://img.shields.io/github/license/CESNET/oarepo-files-rest.svg
-        :target: https://github.com/CESNET/oarepo-files-rest/blob/master/LICENSE
+.. image:: https://img.shields.io/github/license/oarepo/oarepo-files-rest.svg
+        :target: https://github.com/oarepo/oarepo-files-rest/blob/master/LICENSE
 
-.. image:: https://img.shields.io/travis/CESNET/oarepo-files-rest.svg
-        :target: https://travis-ci.org/CESNET/oarepo-files-rest
+.. image:: https://img.shields.io/travis/oarepo/oarepo-files-rest.svg
+        :target: https://travis-ci.org/oarepo/oarepo-files-rest
 
-.. image:: https://img.shields.io/coveralls/CESNET/oarepo-files-rest.svg
-        :target: https://coveralls.io/r/CESNET/oarepo-files-rest
+.. image:: https://img.shields.io/coveralls/oarepo/oarepo-files-rest.svg
+        :target: https://coveralls.io/r/oarepo/oarepo-files-rest
 
 .. image:: https://img.shields.io/pypi/v/oarepo-files-rest.svg
         :target: https://pypi.org/pypi/oarepo-files-rest
