@@ -39,7 +39,6 @@ install_requires = [
     'invenio[{db},{es},base]~={version}'.format(
         db=DATABASE, es=ELASTICSEARCH, version=INVENIO_VERSION),
     'arrow>=0.12.1',
-    'invenio-files-rest==1.0.0a23',
 ]
 
 packages = find_packages()
@@ -91,6 +90,6 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
-        'Development Status :: 3 - Planning',
+        'Development Status :: 4 - Beta',
     ],
 )
